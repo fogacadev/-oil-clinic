@@ -5,20 +5,19 @@ interface ServiceItemProps {
     title: string;
     description: string;
     Icon: IconType;
+    url?: string;
 }
 
-export function ServiceItem({ title, description, Icon }: ServiceItemProps) {
+export function ServiceItem({ title, description, Icon, url = "" }: ServiceItemProps) {
 
     return (
         <Container>
-            <Icon width="30" height="30"/>
             <Content>
-                <strong>{title}</strong>
+                <Icon size={70} color="var(--yellow-400)" />
+                <h3>{title}</h3>
                 <p>{description}</p>
-                <a href="#">mais detalhes</a>
+                {url !== "" && <a href={url}>mais detalhes</a>}
             </Content>
-
-
         </Container>
     );
 }
