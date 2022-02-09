@@ -5,6 +5,15 @@ export const Container = styled.div`
     margin:0 auto;
     display:flex;
     flex-direction:column;
+
+    padding:1rem;
+`;
+
+
+
+export const ServicesContent = styled.div`
+    display: flex;
+    justify-content:space-between;
 `;
 
 export const Title = styled.h1`
@@ -12,10 +21,4 @@ export const Title = styled.h1`
 
     text-align:center;
 
-`;
-
-export const ServicesContent = styled.div`
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
 `;
