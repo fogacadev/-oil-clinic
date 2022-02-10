@@ -6,6 +6,8 @@ import {AiFillCar} from 'react-icons/ai';
 
 import { Container, ServicesContent,Title } from "./styles";
 import { HowItWorks } from "../../components/HowItWorks";
+import { MakeABudged } from "../../components/MakeABudget/Index";
+import { Footer } from "../../components/Footer/Index";
 
 export function Home() {
     return (
@@ -40,6 +42,8 @@ export function Home() {
 
             </Container>
             <HowItWorks/>
+            <MakeABudged/>
+            <Footer/>
         </>
 
     )
